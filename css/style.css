@@ -1,0 +1,130 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-c:#1C1C1C;
+    --text-c:#545454;
+    --opacity-c:#969696;
+    --back-wh:#FFFFFF;
+    --input-b: 1px solid #E4E4E4;
+    --main-blue:#007BFF;
+    --text-sz: 15px;
+    --title-sz: 24px;
+    --tex-op-sz: 13px;
+}
+
+body {
+    font-family: 'Roboto';
+    background: #E5E5E5;
+
+}
+
+.mb_7 {
+    margin-bottom: 7px;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 570px;
+    margin: 0% auto;
+}
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-form {
+    background-color: var(--back-wh);
+    padding-top: 35px;
+    width: 100%;
+    padding-right: 34px;
+    padding-left: 34px;
+    height: 90vh;
+}
+
+.title {
+    font-family: 'Roboto';
+    color: var(--title-c);
+    font-size: var(--title-sz);
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.block-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-form_flex {
+    display: flex;
+    gap: 12px;
+}
+
+label {
+    font-size: var(--text-sz);
+    color: var(--text-c);
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+input {
+    width: 245px;
+    padding: 9.4px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+}
+
+.input {
+    border: var(--input-b)
+}
+
+.input:hover {
+    border: 1px solid var(--main-blue);
+}
+
+.input:focus {
+    transform: scale(1.02);
+    border: 1px solid var(--main-blue);
+}
+
+#email {
+    width: 500px;
+}
+
+.text {
+    color: var(--opacity-c);
+    font-size: var(--tex-op-sz);
+    font-weight: 400;
+}
+
+input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    border: 1px solid #E4E4E4;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  input[type="radio"]:checked + .radio-btn {
+    border: 6px solid var(--main-blue); /* білий центр */
+  }
+  
