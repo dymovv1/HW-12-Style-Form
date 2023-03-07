@@ -59,7 +59,7 @@ body {
     margin-bottom: 20px;
 }
 
-.block-input {
+.block-input, .block-select {
     display: flex;
     flex-direction: column;
 }
@@ -78,8 +78,9 @@ label {
     margin-bottom: 7px;
 }
 
-input {
+input, #select {
     width: 245px;
+    height: 38px;
     padding: 9.4px;
     border-radius: 6px;
     outline: none;
@@ -87,11 +88,11 @@ input {
     transition: all 0.3s;
 }
 
-.input {
+.input, #select {
     border: var(--input-b)
 }
 
-.input:hover {
+.input:hover, #select:hover {
     border: 1px solid var(--main-blue);
 }
 
@@ -112,19 +113,41 @@ input {
 
 input[type="radio"] {
     display: none;
-  }
+}
   
-  .radio-btn {
+.radio-btn {
     display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 50%; 
     border: 1px solid #E4E4E4;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
+    vertical-align: sub;
+    margin-right: 8px;
+}
   
-  input[type="radio"]:checked + .radio-btn {
-    border: 6px solid var(--main-blue); /* білий центр */
-  }
+input[type="radio"]:checked + .radio-btn {
+    border: 6px solid var(--main-blue); 
+ }
   
+.block-radio {
+    display: flex;
+    gap: 21px;
+}
+
+select {
+    color: var(--opacity-c);
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.block-select_option:not(:first-child) {
+    color: var(--title-c);
+}
+
+.block-flex_gap {
+    display: flex;
+    gap:10px
+}
+
