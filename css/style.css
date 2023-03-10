@@ -22,6 +22,10 @@ body {
 
 }
 
+.pb_104 {
+    padding-bottom: 104px;
+}
+
 .mb_7 {
     margin-bottom: 7px;
 }
@@ -157,18 +161,22 @@ select {
     cursor: pointer;
 }
 
+.select-caret {
+    position: relative;
+}
+
 .select-caret::before {
     content: "";
     display: block;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 5.25px 5.2px 5.25px;
+    border-width: 0 5.25px 5.25px 5.25px;
     border-color: transparent transparent #969696 transparent;
     position: absolute;
     pointer-events: none;
-    top: 60%;
-    left: 48%;
+    top: 15px;
+    right: 13px;
 }
 
 .select-caret::after {
@@ -177,13 +185,13 @@ select {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 5.25px 5.2px 5.25px;
+    border-width: 0 5.25px 5.25px 5.25px;
     transform: rotateX(180deg);
     border-color: transparent transparent #969696 transparent;
     position: absolute;
     pointer-events: none;
-    top: 61%;
-    left: 48%;
+    top: 22px;
+    right: 13px;
 }
 
 .block-flex_gap {
@@ -202,6 +210,9 @@ select {
     border: 1px solid #E4E4E4;
     border-radius: 6px;
     transition: all 0.3s;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
 }
 
 .button:hover {
@@ -285,22 +296,66 @@ input[type="file"] {
     cursor: pointer;
     color: transparent;
     transition: all 0.2s;
-  }
-  
-  input[type="file"]::-webkit-file-upload-button {
-    visibility: hidden;
-  }
+}
 
-  #photo-upload::after {
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#photo-upload::after {
     content: url(../img/shape.svg);
     position: relative;
     left: 0px;
     top: 8px;
+}
 
-  }
+#photo-upload {
+    margin-bottom: 9px;
+}
 
-  .block-profile_upload {
+
+.block-profile_upload {
     display: block;
-  }
-  
-  
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.block-button_trash {
+    padding-top: 6px;
+}
+
+.button-trash {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button-trash:hover {
+    background-color:rgb(244, 76, 76);
+    opacity: 0.8;
+
+}
+
+.button-trash img {
+    width: 16px;
+    height: 16px;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-update {
+    width: 150px;
+}

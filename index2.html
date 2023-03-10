@@ -13,14 +13,14 @@
 
     <div class="main-page">
         <div class="container">
-            <div class="block-form">
+            <div class="block-form pb_104">
                 <div >
                     <h1 class="title">
                         Profile
                     </h1>
                 </div>
 
-                <div class="block-profile">
+                <div class="block-profile mb_20">
 
                 <div class="block-profile_photo">
                     <img class="photo" src="./img/photo_profile.png" alt="photo_profile">
@@ -32,8 +32,72 @@
                     <span class="text">Up to 1 MB (300x300 px)</span>
                     </div>
 
+                    <div class="block-button_trash">
+                        <button type="reset" class="button-trash">
+                            <img src="./img/trash.svg" alt="trash">
+                        </button>
+                    </div>
+
                 </div>
-            </div>
+
+                <div class="block-flex_gap mb_20">
+
+                    <div class="block-input">
+                        <label for="name">Name</label>
+                        <input class="input" type="text" id="name" name="name">
+                      </div>
+                      
+                      <div class="block-input">
+                        <label for="email2">E-mail</label>
+                        <input class="input" type="email" id="email2" name="email">
+                      </div>
+
+                    </div>
+                    
+                    <div class="block-flex_gap">
+
+
+                        <div class="block-select mb_20">
+                            <label for="select">Country</label>
+                            <div class="select-caret">
+                            <select name="select" id="select">
+                                <option class="block-select_option" value="#" selected disabled >Select</option>
+                                <option class="block-select_option" value="#">Ukraine</option>
+                                <option class="block-select_option" value="#">Poland</option>
+                                <option class="block-select_option" value="#">Germany</option>
+                                <option class="block-select_option" value="#">Litwa</option>
+                                <option class="block-select_option" value="#">Norway</option>
+                            </select>
+                        </div>
+                        </div>
+    
+                        
+                        <div class="block-input">
+                            <label for="city">City</label>
+                            <input class="input" type="text" id="city" name="city">
+                          </div>
+    
+                        </div>
+
+                        <div class="block-flex_gap mb_20">
+
+                            <div class="block-input">
+                                <label for="zipcode">Zip Code</label>
+                                <input class="input" type="number" id="zipcode" name="zipcode">
+                              </div>
+                              
+                              <div class="block-input">
+                                <label for="telephone">Phone Number</label>
+                                <input class="input" type="number" id="telephone" name="telephone">
+                              </div>
+        
+                        </div>
+
+                        <div class="block-button">
+
+                            <a class="button btn-update" href="index.html">Update</a>
+    
+                        </div>
 
         </div>
     </div>
