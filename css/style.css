@@ -51,6 +51,12 @@ body {
     width: 100%;
     padding-right: 34px;
     padding-left: 34px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .title {
@@ -144,6 +150,9 @@ select {
     line-height: 22px;
     font-weight: 400;
     font-family: "Roboto";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .block-select_option:not(:first-child) {
@@ -185,7 +194,7 @@ select {
     max-width: 410px;
     margin:  0 auto;
     text-align: center;
-
+    padding-bottom: 20px;
 }
 
 .line {
@@ -202,4 +211,25 @@ select {
 
 .text-link:hover {
     text-decoration: underline var(--main-blue);
+}
+
+.block-login {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.block-login__text {
+    color: var(--text-c);
+    font-size: var(--text-sz);
+    line-height: 22px;
+    font-weight: 400;
+} 
+
+.block-login__text--blue {
+    color: var(--main-blue);
+    font-weight: 500;
+    line-height: 22px;
+    font-weight: 400;
 }
